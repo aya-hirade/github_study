@@ -1,0 +1,206 @@
+html{
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.hero_img{
+    height: 150px;
+    background-image: url(../img/mainvisual.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.index{
+    background-color: #F5F5F5;
+}
+
+.index__bg{
+    padding: 60px 0 65px 0;
+}
+
+.index_hero{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 34px 0;
+}
+
+.index_box_wrap{
+    padding: 0 20px 0;
+}
+
+.index_box{
+    max-width: 680px;
+    border: solid 1px #333333;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.index_box_inner{
+    border: solid 1px red;
+    padding: 33px 0;
+}
+
+.index_list{
+    padding: 0 20px 0;
+}
+
+.index_listItem{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+
+.index_listItem:last-child{
+    margin-bottom: 0;
+}
+
+
+.picture{
+    padding-top: 40px;
+}
+
+.picture_item{
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+.picture_item_list{
+    margin-bottom: 15px;
+}
+
+.picture_item_list img{
+    width: 100%;
+}
+/* 親タグにたいして子タグ（インライン）を100%に指定してあげる */
+/* 「画面（表示領域）」に対してはvwを使う（例：100vw） */
+
+
+@media screen and (min-width: 768px){
+    .hero_img{
+        height: 400px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .picture{
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .picture_item{
+       display: flex;
+       max-width: 800px;
+       padding: 0px;
+       flex-wrap: wrap;
+       margin: 0 auto;
+       gap: 16px;
+    }
+    /* maxをつけないと、ブラウザがその数字以下になっても横スクロール発生する */
+
+    .picture_item_list{
+        margin: 0 auto;
+    }
+
+    .picture_item_list img{
+        width: 392px;
+    }
+}
+
+.detail{
+    margin: 0 20px;
+    padding: 45px 0 41px 0;
+    background-color: #DEDEDE;
+}
+
+.detail__header{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 37px;
+    text-align: center;
+}
+
+.detail__contents{
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.detail__contentsInfo .mb{
+    margin-bottom: 17px;
+}
+
+.detail__contentsInfo_title{
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+
+.detail__line{
+    display: block;
+    margin: 41px 0;
+    background-color: #000;
+    height: 1px;
+}
+
+.detail__contentsNote .mb{
+    margin-bottom: 24px;
+}
+
+.deail__link{
+    text-decoration-line: underline;
+    text-underline-offset: 7px;
+
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    .detail{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .detail__header{
+  
+    }
+    
+    .detail__contents{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 60px;
+    }
+    
+    .detail__contentsInfo .mb{
+  
+    }
+    
+    .detail__contentsInfo_title{
+   
+    }
+
+    .detail__line_wrap{
+        margin: 0px 55px;
+    }
+   
+    .detail__line{
+        position: absolute;
+        width: 1px;
+        height: 140px;
+        margin-top: 0px;
+   
+    }
+    
+    .detail__contentsNote{
+        width: 386px;
+ 
+    }
+    
+    .deail__link{
+   
+    }
+
+
+}
